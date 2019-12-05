@@ -1,0 +1,41 @@
+th {
+    width: 150px;
+    padding: 10px;
+    font-weight: bold;
+    vertical-align: top;
+    color: #FFF;
+    background: #f8585b;
+    margin: 20px 10px;
+}
+tbody th {
+    width: 150px;
+    padding: 10px;
+}
+td {
+    width: 350px;
+    padding: 10px;
+    vertical-align: top;
+}
+
+table {
+  border-radius: 50px;
+}
+
+Button {
+    width:100px;
+    background-color: #f8585b;
+    border: none;
+    color:#FFF;
+    padding: 9px 0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px;
+    cursor: pointer;
+    border-radius: 10px
+}
+
+Button:hover{
+  background-color: blue;
+}

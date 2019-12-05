@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <form name="msgwrite" method="post" action="BoardSave.jsp">
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <script language="javascript">
+      function check(){
+        with(document.msgwrite){
+          if(subject.value.length==0){
+            alert("제목을 입력해주세요.");
+            subject.focus();
+            return false;
+          }
+          if(name.value.length==0){
+            alert("이름을 입력해주세요.");
+            name.focus();
+            return false;
+          }
+          if(password.value.length==0){
+            alert("비밀번호를 입력해주세요.");
+            password.focus();
+            return false;
+          }
+          if(content.value.length==0){
+            alert("내용을 입력해주세요.");
+            content.focus();
+            return false;
+          }
+          document.msgwrite.submit();
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <center>
+      <table>
+        <thead>
+          <th scope="cols"></th>
+          <th scope="cols">새 글 작성</th>
+        </thead>
+        <tbody>
+          <tr><th scope="row">이 름</th><td><input type = text name = name><br></td></tr>
+          <tr><th scope="row">E-mail</th><td><input type=text name= email><br></td></tr>
+          <tr><th scope="row">제 목</th><td><input type=text name= subject size="60" maxlength="60"><br></td></tr>
+          <tr><th scope="row">내 용</th><td><textArea cols="65" rows="15" name = content maxlength="2000"></textArea><br><br></td></tr>
+          <tr><th scope="row">암 호</th><td><input type=password name=password><br>(비밀번호를 입력하면 수정 또는 삭제가 가능합니다.)<br></td></tr>
+          <tr><th scope="row">파 일  업 로 드</th><td><input type=file name=file><br><br></td></tr>
+        </tbody>
+      </table>
+      <button onClick="check();">등록하기
+      <button onClick="history.go(-1)">취소하기
+    </center>
+  </body>
+</html>
