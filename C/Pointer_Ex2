@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+void main(){
+  int i =10;
+  int *p;
+  p=&i;
+  print("i=%d\n", i);
+  *p=20;
+  print("i=%d", i);
+  return 0;
+}
